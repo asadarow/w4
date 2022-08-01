@@ -165,7 +165,7 @@ table {
 @media (max-width: 767px) {
   .classic {
     padding: 40px 0px; }
-    .classic h2 {
+    .classic h2:first-child {
       font-size: 24px;
       margin-bottom: 24px; }
   .classicitem img {
