@@ -1,0 +1,11 @@
+@mixin PAD {
+    @media (max-width: 992px){
+        @content
+    }
+};
+
+@mixin MB {
+    @media (max-width: 767px){
+        @content
+    }
+};
