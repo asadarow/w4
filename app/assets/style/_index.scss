@@ -1,0 +1,325 @@
+// 第一頁
+.banner{
+    background: url("../images/home-header.png") no-repeat center / cover;
+    // padding: 296px 0px;
+    .container{
+        height: 787px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        color: $color_primary_dark;
+        @include MB(){
+            height: 396px;
+        }
+        h1{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .btn{
+            color: $color_white;
+            background: $color_primary;
+            padding: 6px 12px;
+            font-size: 20px;
+            font-weight: $medium;
+            &:hover{
+                background: lighten($color_primary,5%);
+            }
+        }
+    }
+    @include PAD(){
+        background: url("../images/home-header-sm.png") no-repeat center / cover;
+    }
+    @include MB(){
+        h1{
+            font-size: 24px;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+}
+
+
+.feature{
+    background: $color_secondary;
+    padding: 80px 0px;
+    h2{
+        text-align: center;
+        color: $color_primary_dark;
+        margin-bottom: 30px;
+        font-weight: $bold;
+    }
+    img{
+        width: 84px;
+        margin-bottom: 24px;
+    }
+    h4{
+        text-align: center;
+        color: $color_primary_dark;
+        margin-bottom: 8px;
+        font-weight: $bold;
+    }
+    @include MB(){
+        padding: 40px 0px;
+        h2{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    } 
+}
+.featureitem{
+    display: flex;
+    gap: 24px;
+    li{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include PAD(){
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            width: calc(50% - 12px);
+        }
+    }
+    @include MB(){
+        li{
+            width: 100%;
+        }
+    }
+}  
+
+
+.classic{
+    padding: 80px 0px;
+    text-align: center;
+    h2:first-child{
+        margin-bottom: 48px;
+        color: $color_primary_dark;
+    }
+    @include MB(){
+        padding: 40px 0px;
+        h2:first-child{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+.classicitem{
+    display: flex;
+    gap: 24px;
+    li{
+        width: 33.33%;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    h2{
+        font-style: italic;
+        color: $color_primary;
+        font-weight: $black;
+    }
+    @include PAD(){
+        flex-wrap: wrap;
+        li{
+            width: 100%;
+        }
+        img{
+            max-width: calc(50% - 12px);
+        }
+    }
+    @include MB(){
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+
+.cobrand{
+    background: url("../images/index-bg.png") no-repeat center / cover;
+    padding: 80px 0px;
+    text-align: center;
+    h2{
+        padding: 8px;
+    }
+    h2:first-child{
+        margin-bottom: 48px;
+        color: $color_white;
+    }
+    @include PAD(){
+        background: url("../images/index-bg-md.png") no-repeat center / cover;
+    }
+    @include MB(){
+        padding: 40px 0px;
+        background: url("../images/index-bg-sm.png") no-repeat center / cover;
+        h2:first-child{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }  
+    }
+}
+.cobranditem{
+    display: flex;
+    li{
+        width: 50%;      
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    h2{
+        font-style: italic;
+        color: $color_primary;
+        background: $color_white;
+        font-weight: $black;
+    }
+    @include PAD(){
+        flex-wrap: wrap;
+        gap: 24px;
+        li{
+            width: 100%;
+        }
+    }
+}
+
+
+.recommend{
+    padding: 80px 0px;
+    h2{
+        color: $color_primary_dark;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    @include MB(){
+        padding: 40px 0px;
+        h2{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+.recommenditem{
+    display: flex;
+    gap: 24px;
+    li{
+        width: 25%;
+        box-shadow: 0px 2px 6px $color_shadow;
+        border-radius: 4px;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    p:first-child{
+        margin-bottom: 8px;
+        font-weight: $medium;
+    }
+    p:nth-child(2){
+        margin-bottom: 72px;
+    }
+    p:last-child{
+        color: $color_gray;
+        font-size: 14px;
+    }
+    @include PAD(){
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            width: calc(50% - 12px);
+        }
+    }
+    @include MB(){
+        li{
+            width: 100%;
+        }
+    }
+}
+
+
+.contact{
+    background: $color_secondary;
+    form{
+        padding: 80px 0px;
+        max-width: calc(50% - 12px);
+        margin: auto;
+    }
+    h2{
+        color: $color_primary_dark;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    p{
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    label:not(:last-child){
+        display: block;
+        margin-bottom: 16px;
+    }
+    label:nth-last-child(2){
+        margin-bottom: 48px;
+    }
+    label:last-child{
+        display: flex;
+        justify-content: center;
+    }
+    input[type="text"],input[type="email"],input[type="tel"],textarea{
+        margin-top: 8px;
+        width: 100%;
+        padding: 6px 12px;
+        background: none;
+        border: 1px solid $color_black;
+    }
+    textarea{
+        height: 136px;
+    }
+    input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-right: 4px;
+    }
+
+    input[type="submit"]{
+        background: $color_primary;
+        padding: 16px 176px;
+        color: $color_white;
+        font-weight: $bold;
+        border: none;
+        font-size: 16px;
+        &:hover{
+            background: $color_primary_dark;
+        }
+    }
+    @include PAD(){
+        h2{
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: 16px;
+        }
+        form{
+            max-width: calc(100% /6 *5 - 4px);
+        }
+    }
+    @include MB(){
+        h2{
+            font-size: 24px;
+        }
+        form{
+            padding: 40px 0px;
+            max-width: 100%;
+        }
+        label:nth-last-child(2){
+            margin-bottom: 24px;
+        }
+        input[type="submit"]{
+            width: 100%;
+            padding: 16px;  
+        }
+    }
+}

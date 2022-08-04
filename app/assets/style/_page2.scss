@@ -1,0 +1,41 @@
+.series{
+    // Q:PAD跟MOBILE會滿版，所以把container樣式寫這
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    li{
+        width: calc(100% / 3);
+        border-left: 1px solid $color_gray2;
+        border-right: 1px solid $color_gray2;
+        &:first-child,:hover{
+            border-bottom: 8px solid $color_primary;
+        }
+        // Q:要加這個不然會疊加邊框
+        &:first-child :hover{
+            border-bottom: none;
+        }
+    }
+    a{
+        width: 100%;
+        font-size: 32px;
+        text-align: center;
+        font-weight: $medium;
+        padding: 24px 0px 16px 0px;
+        color: $color_black;
+    }
+    @include PAD(){
+        max-width: none;
+        padding: 0px;
+        a{
+            font-size: 24px;
+            padding: 16px 0px 8px 0px;
+        }
+    }
+    @include MB(){
+        a{
+            font-size: 16px;
+        }
+    }
+}
