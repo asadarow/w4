@@ -9,7 +9,7 @@
         justify-content: center;
         align-items: flex-end;
         color: $color_primary_dark;
-        @include MB(){
+        @include MB{
             height: 396px;
         }
         h1{
@@ -27,10 +27,10 @@
             }
         }
     }
-    @include PAD(){
+    @include PAD{
         background: url("../images/home-header-sm.png") no-repeat center / cover;
     }
-    @include MB(){
+    @include MB{
         h1{
             font-size: 24px;
         }
@@ -60,7 +60,7 @@
         margin-bottom: 8px;
         font-weight: $bold;
     }
-    @include MB(){
+    @include MB{
         padding: 40px 0px;
         h2{
             font-size: 24px;
@@ -77,14 +77,14 @@
         flex-direction: column;
         align-items: center;
     }
-    @include PAD(){
+    @include PAD{
         flex-wrap: wrap;
         justify-content: center;
         li{
             width: calc(50% - 12px);
         }
     }
-    @include MB(){
+    @include MB{
         li{
             width: 100%;
         }
@@ -99,7 +99,7 @@
         margin-bottom: 48px;
         color: $color_primary_dark;
     }
-    @include MB(){
+    @include MB{
         padding: 40px 0px;
         h2:first-child{
             font-size: 24px;
@@ -122,7 +122,7 @@
         color: $color_primary;
         font-weight: $black;
     }
-    @include PAD(){
+    @include PAD{
         flex-wrap: wrap;
         li{
             width: 100%;
@@ -131,7 +131,7 @@
             max-width: calc(50% - 12px);
         }
     }
-    @include MB(){
+    @include MB{
         img{
             max-width: 100%;
         }
@@ -150,10 +150,10 @@
         margin-bottom: 48px;
         color: $color_white;
     }
-    @include PAD(){
+    @include PAD{
         background: url("../images/index-bg-md.png") no-repeat center / cover;
     }
-    @include MB(){
+    @include MB{
         padding: 40px 0px;
         background: url("../images/index-bg-sm.png") no-repeat center / cover;
         h2:first-child{
@@ -177,7 +177,7 @@
         background: $color_white;
         font-weight: $black;
     }
-    @include PAD(){
+    @include PAD{
         flex-wrap: wrap;
         gap: 24px;
         li{
@@ -194,7 +194,7 @@
         margin-bottom: 48px;
         text-align: center;
     }
-    @include MB(){
+    @include MB{
         padding: 40px 0px;
         h2{
             font-size: 24px;
@@ -225,14 +225,14 @@
         color: $color_gray;
         font-size: 14px;
     }
-    @include PAD(){
+    @include PAD{
         flex-wrap: wrap;
         justify-content: center;
         li{
             width: calc(50% - 12px);
         }
     }
-    @include MB(){
+    @include MB{
         li{
             width: 100%;
         }
@@ -295,7 +295,7 @@
             background: $color_primary_dark;
         }
     }
-    @include PAD(){
+    @include PAD{
         h2{
             margin-bottom: 24px;
         }
@@ -306,7 +306,7 @@
             max-width: calc(100% /6 *5 - 4px);
         }
     }
-    @include MB(){
+    @include MB{
         h2{
             font-size: 24px;
         }

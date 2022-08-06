@@ -1,6 +1,6 @@
 .header{
     background: $color_primary;
-    @include MB(){
+    @include MB{
         a{
             width: 100%;
         }
@@ -9,7 +9,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include MB(){
+        @include MB{
             flex-wrap: wrap;
             justify-content: center;
             max-width: none;
@@ -29,7 +29,7 @@
             background: lighten($color_primary,5%);
         }
     }
-    @include MB(){
+    @include MB{
         flex-wrap: wrap;
         width: 100%;
         li{
@@ -43,7 +43,7 @@
 }
 .logo{
     width: 80px;
-    @include MB(){
+    @include MB{
         margin: 16px;
     }
 }
@@ -62,11 +62,11 @@
     hr{
         margin-bottom: 32px;
     }
-    @include PAD(){
+    @include PAD{
         padding-bottom: 40px;
     }
 
-    @include MB(){
+    @include MB{
         padding-top: 24px;
         padding-bottom: 24px;
         .container:first-child{
@@ -93,7 +93,7 @@
 .footernav{
     display: flex;
     gap: 48px;
-    @include MB(){
+    @include MB{
         display: none;
     }
 }
@@ -103,13 +103,13 @@
     img{
         width: 48px;
     }
-    @include PAD(){
+    @include PAD{
         gap: 16px;
         img{
             width: 40px;
         }
     }
-    @include MB(){
+    @include MB{
         gap: 8px;
         img{
             width: 24px;
@@ -136,7 +136,7 @@
     hr{
         color: $color_white;
     }
-    @include MB(){
+    @include MB{
         padding-bottom: 0px;
         margin-bottom: 0px;
         a{
@@ -161,7 +161,7 @@
     li{
         font-size: 14px;
     }
-    @include MB(){
+    @include MB{
         flex-direction: column;
         gap: 8px;
         ul{
@@ -170,7 +170,7 @@
     }
 }
 .rule{
-    @include MB(){
+    @include MB{
         flex-direction: column;
     }
 }
