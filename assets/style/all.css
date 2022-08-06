@@ -604,4 +604,132 @@ p {
     .series a {
       font-size: 16px; } }
 
+.product-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .product-header li {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50vw;
+    height: 296px; }
+    @media (max-width: 767px) {
+      .product-header li {
+        height: 136px; } }
+  .product-header li:first-child {
+    background-image: url(../images/product-header-1.png); }
+    @media (max-width: 992px) {
+      .product-header li:first-child {
+        background-image: url(../images/product-header-sm-1.png); } }
+  .product-header li:last-child {
+    background-image: url(../images/product-header-2.png); }
+    @media (max-width: 992px) {
+      .product-header li:last-child {
+        background-image: url(../images/product-header-sm-2.png); } }
+
+.combi {
+  padding: 80px 0px;
+  text-align: center; }
+  .combi h2 {
+    font-size: 42px;
+    font-weight: 500; }
+    @media (max-width: 767px) {
+      .combi h2 {
+        font-size: 24px; } }
+  .combi h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .combi h3 {
+        font-size: 24px; } }
+
+.combiitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .combiitem li {
+    width: calc(25% - 18px);
+    margin-bottom: 80px; }
+    @media (max-width: 992px) {
+      .combiitem li {
+        width: calc(50% - 12px);
+        margin-bottom: 40px; } }
+    @media (max-width: 767px) {
+      .combiitem li {
+        width: 100%;
+        margin-bottom: 24px; } }
+  .combiitem img {
+    max-width: 100%; }
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .info p {
+    font-size: 24px; }
+  .info p:nth-child(2n) {
+    font-weight: 500;
+    color: #AA0601; }
+
+.color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.colorblock {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px; }
+
+.c1 {
+  background: #5F3E2D;
+  margin-right: 8px; }
+
+.c2 {
+  background: #B75929; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pagination li {
+    border-color: #555555;
+    border-style: solid;
+    border-width: 1px 0px 1px 1px; }
+  .pagination li:last-child {
+    border-right: 1px solid #555555; }
+  .pagination a {
+    width: 100%;
+    font-size: 18px;
+    color: #555555;
+    padding: 12px 16px; }
+    @media (max-width: 767px) {
+      .pagination a {
+        font-size: 16px; } }
+  .pagination li:last-child a, .pagination li:first-child a {
+    font-size: 19px;
+    padding: 11px 12px; }
+    @media (max-width: 767px) {
+      .pagination li:last-child a, .pagination li:first-child a {
+        font-size: 16px; } }
+  .pagination li:last-child {
+    background: #F2F2F2; }
+  .pagination li:nth-child(3), .pagination li:hover {
+    background: #000000; }
+  .pagination li:nth-child(3) a, .pagination li:hover a {
+    color: #fff; }
+
 /*# sourceMappingURL=all.css.map */
