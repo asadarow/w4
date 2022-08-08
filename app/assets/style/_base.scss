@@ -10,18 +10,16 @@ line-height: 1.5;
     max-width: 1320px;
     margin: 0 auto;
     padding-left: 12px;
-    padding-right: 12px;    
-}
-@media (max-width: 992px){
-    .container{
+    padding-right: 12px;
+    @include PAD{
         max-width: 720px;
     }
-}
-@media (max-width: 767px){
-    .container{
+    @include MB{
         max-width: 372px;
-    }
+    }    
 }
+
+
 a{
     text-decoration: none;
     text-align: center;
@@ -45,7 +43,5 @@ h4{
 p{
     font-size: 16px;
 }
-.pd16{
-    padding: 16px;
-}
+
 

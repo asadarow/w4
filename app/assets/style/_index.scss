@@ -202,6 +202,11 @@
         }
     }
 }
+.pd16{
+    padding: 16px;
+    height: 205px;
+    position: relative;
+}
 .recommenditem{
     display: flex;
     gap: 24px;
@@ -218,10 +223,10 @@
         margin-bottom: 8px;
         font-weight: $medium;
     }
-    p:nth-child(2){
-        margin-bottom: 72px;
-    }
+
     p:last-child{
+        position: absolute;
+        bottom: 16px;
         color: $color_gray;
         font-size: 14px;
     }
